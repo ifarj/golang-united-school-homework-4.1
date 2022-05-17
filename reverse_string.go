@@ -1,6 +1,9 @@
 package reverse_string
 
 func ReverseString(input string) (output string) {
-	// solution goes here
+	inputRunes := []rune(input)
+	for i := len(inputRunes) - 1; i >= 0; i-- {
+		output += string(inputRunes[i])
+	}
 	return output
 }
